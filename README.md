@@ -1,7 +1,4 @@
-# Rock-Paper-Scissors_Game
-Play Rock Paper Scissors with computer!
-
-# Rock Paper Scissors Game
+## Rock Paper Scissors Game
 >Play Rock Paper Scissors with computer!
 
 ## Steps to use
