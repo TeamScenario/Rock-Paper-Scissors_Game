@@ -10,22 +10,10 @@ def RPS(user_input):
     if user_input == res:
         return N_W
 
-    if user_input == "Rock" and res == "Scissors":
-        return U_W
-        
-    elif user_input == "Paper" and res == "Rock":
+    elif user_input == "Rock" and res == "Scissors" or user_input == "Paper" and res == "Rock" or user_input == "Scissors" and res == "Paper":
         return U_W
                 
-    elif  user_input == "Scissors" and res == "Paper":
-        return U_W
-                
-    elif user_input == "Rock" and res == "Paper":
-        return C_W
-        
-    elif user_input == "Paper" and res == "Scissors":
-        return C_W
-        
-    elif user_input == "Scissors" and res == "Rock":
+    elif user_input == "Rock" and res == "Paper" or user_input == "Paper" and res == "Scissors" or user_input == "Scissors" and res == "Rock":
         return C_W
     else:
         return "wrong input"
