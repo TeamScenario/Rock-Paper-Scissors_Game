@@ -14,7 +14,7 @@ After clone
 ```console
 cd Rock-Paper-Scissors_Game
 ```
-After this
+After cd
 ```console
 python start.py
 ```
