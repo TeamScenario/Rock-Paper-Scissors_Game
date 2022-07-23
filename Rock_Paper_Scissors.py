@@ -3,36 +3,29 @@ import random
 def RPS(user_input):
     choices = ["Rock", "Paper", "Scissors"]
     res = random.choice(choices)
+    U_W = "You won"
+    C_W = "I won 😂"
+    N_W = "It's a tie"
     
-    if user_input == "Rock" and res == "Rock":
-        return "it's a tie"
-        
-    elif user_input == "Paper" and res == "Paper":
-        return "it's a tie"
-        
-    elif user_input == "Scissors" and res == "Scissors":
-        return "It's a tie"
-        
-    elif user_input == "Rock" and res == "Scissors":
-        return "You won 😒"
+    if user_input == res:
+        return "Computer's input:- {}\nYour input:- {}\nResult :- it's a tie".format(res,user_input)
+    
+    if user_input == "Rock" and res == "Scissors":
+        return U_W
         
     elif user_input == "Paper" and res == "Rock":
-        return "You won 😒"
-        
+        return U_W
+                
     elif  user_input == "Scissors" and res == "Paper":
-        return "You won 😒"
-        
+        return U_W
+                
     elif user_input == "Rock" and res == "Paper":
-        return "I won 😂"
+        return C_W
         
     elif user_input == "Paper" and res == "Scissors":
-        return "I won 😂"
+        return C_W
         
     elif user_input == "Scissors" and res == "Rock":
-        return "I won 😂"
-
+        return C_W
     else:
         return "wrong input"
-     
-        
-     
