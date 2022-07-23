@@ -3,13 +3,13 @@ import random
 def RPS(user_input):
     choices = ["Rock", "Paper", "Scissors"]
     res = random.choice(choices)
-    U_W = "You won"
-    C_W = "I won 😂"
-    N_W = "It's a tie"
+    U_W = "Computer's input:- {}\nYour input:- {}\n\nResult :- ✨ You won ✨".format(res,user_input)
+    C_W = "Computer's input:- {}\nYour input:- {}\n\nResult :- 😴 Computer won 😴".format(res,user_input)
+    N_W = "Computer's input:- {}\nYour input:- {}\n\nResult :- it's a tie!".format(res,user_input)
     
     if user_input == res:
-        return "Computer's input:- {}\nYour input:- {}\nResult :- it's a tie".format(res,user_input)
-    
+        return N_W
+
     if user_input == "Rock" and res == "Scissors":
         return U_W
         
