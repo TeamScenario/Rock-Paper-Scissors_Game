@@ -1,3 +1,5 @@
+''' By @CoderX on Telegram'''
+
 import random
 
 def RPS(user_input):
