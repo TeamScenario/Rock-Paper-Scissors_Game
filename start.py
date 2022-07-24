@@ -1,3 +1,5 @@
+''' By @CoderX on Telegram'''
+
 import sys
 from os import system as _
 from time import sleep as sl
