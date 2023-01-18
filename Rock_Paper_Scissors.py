@@ -1,6 +1,5 @@
-''' By @CoderX on Telegram'''
-
 def RPS():
+    ''' By @CoderX on Telegram'''
     user_input, choices = input("Enter your input\n    • Rock\n    • Paper\n    • Scissors\n    • 0 to exit:  ").title(), ["Rock", "Paper", "Scissors"] 
     res = __import__("random").choice(choices)
     WHW = ["Computer's input:- {}\nYour input:- {}\n\nResult :- ✨ You won ✨".format(res,user_input), "Computer's input:- {}\nYour input:- {}\n\nResult :- 😴 Computer won 😴".format(res,user_input), "Computer's input:- {}\nYour input:- {}\n\nResult :- it's a tie!".format(res,user_input)]
